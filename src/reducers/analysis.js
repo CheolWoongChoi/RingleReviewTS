@@ -4,7 +4,7 @@ const initialState = {
 
 };
 
-const script = (state = initialState, action) => {
+const analysis = (state = initialState, action) => {
 	switch(action.type) {
 		case 'something': 
 			return state;
@@ -13,4 +13,4 @@ const script = (state = initialState, action) => {
 	}
 }
 
-export default script;
+export default analysis;

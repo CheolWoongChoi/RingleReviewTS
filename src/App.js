@@ -1,21 +1,29 @@
 import React from 'react';
-import Summary from './components/Summary';
-import Script from './components/Script';
+import FeedbackContainer from './containers/FeedbackContainer';
+import AnalysisContainer from './containers/AnalysisContainer';
+import SuggestionsContainer from './containers/SuggestionsContainer';
+import ScriptContainer from './containers/ScriptContainer';
+
 import './App.scss';
 
 const App = () => {
 	return (
 		<div className='review-page'>
+			{/* 제목 */}
 			<h1 className='header'>Ringle 복습 페이지</h1>
 			<div>
-				{/* Summary graph & Tutor's Feedback */}
-				<Summary />
+				{/* Feedback: 왼쪽 */}
+				<FeedbackContainer />
 
-				{/* Suggestions - 단어 */}
+				{/* Analysis: 왼쪽 */}
+				<AnalysisContainer />
 
-				{/* 스크립트 오른쪽 */}
-				<Script />
-				
+				{/* Suggestions: 중간 */}
+				<SuggestionsContainer />
+
+				{/* Script: 오른쪽 */}
+				<ScriptContainer />
+
 				{/* 하단 오디오 플레이어 */}
 			</div>
 		</div>

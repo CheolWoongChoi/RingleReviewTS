@@ -12,3 +12,5 @@ const suggestions = (state = initialState, action) => {
 			return state;
 	}
 }
+
+export default suggestions;
