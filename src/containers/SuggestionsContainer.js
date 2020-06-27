@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Suggestions from '../components/Suggestions';
+import Suggestions from '../components/Suggestions/Suggestions';
 import { getSuggestions } from '../actions';
 import { useDispatch } from 'react-redux';
 

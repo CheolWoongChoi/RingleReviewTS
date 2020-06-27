@@ -1,0 +1,21 @@
+.title-header {
+	.title {
+		span {
+			display: inline-block;
+		}
+
+		.text {
+			width: 60%;
+			font-size: 24px;
+			font-weight: 600;
+			color: #2d2d2f;
+		}
+		
+		.date {
+			width: 30%;
+			margin-left: 1%;
+			font-size: 13px;
+		}
+	}
+
+}

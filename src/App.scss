@@ -1,5 +1,21 @@
-.review-page {
-	.review-header {
-		font-size: 20px;
-	}	
+
+// 레이아웃
+.ringle-review {
+	padding: 15px;
+
+	.contents {
+		margin-top: 20px;
+
+		.left, .right {
+			display: inline-block;
+		}
+
+		.left {
+			width: 60%;
+		}
+
+		.right {
+			width: 40%;
+		}
+	}
 }

@@ -3,28 +3,25 @@ import FeedbackContainer from './containers/FeedbackContainer';
 import AnalysisContainer from './containers/AnalysisContainer';
 import SuggestionsContainer from './containers/SuggestionsContainer';
 import ScriptContainer from './containers/ScriptContainer';
+import TitleHeader from './components/TitleHeader';
 
 import './App.scss';
 
 const App = () => {
 	return (
-		<div className='review-page'>
-			{/* 제목 */}
-			<h1 className='header'>Ringle 복습 페이지</h1>
-			<div>
-				{/* Feedback: 왼쪽 */}
-				<FeedbackContainer />
-
-				{/* Analysis: 왼쪽 */}
-				<AnalysisContainer />
-
-				{/* Suggestions: 중간 */}
-				<SuggestionsContainer />
-
-				{/* Script: 오른쪽 */}
-				<ScriptContainer />
-
-				{/* 하단 오디오 플레이어 */}
+		<div className='ringle-review'>
+			<TitleHeader />
+			
+			{/* 내용 */}
+			<div className='contents'>
+				<div className='left'>
+					<SuggestionsContainer />
+					<ScriptContainer />
+				</div>
+				<div className='right'>
+					<FeedbackContainer />
+					<AnalysisContainer />
+				</div>
 			</div>
 		</div>
 	);

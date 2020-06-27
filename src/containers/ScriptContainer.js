@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Script from '../components/Script';
+import Script from '../components/Script/Script';
 import { getScript } from '../actions';
 import { useDispatch } from 'react-redux';
 
