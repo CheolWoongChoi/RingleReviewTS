@@ -1,0 +1,23 @@
+.feedback {
+	.content {
+		display: flex;
+		padding: 10px;
+
+		p, a {
+			margin: 0;
+			display: inline-block;
+		}
+
+		.comment {
+			width: 70%;
+			font-size: 12px;
+		}
+
+		.detail {
+			padding-left: 10px;
+			width: 30%;
+			font-size: 12px;
+			text-decoration: underline;
+		}
+	}
+}

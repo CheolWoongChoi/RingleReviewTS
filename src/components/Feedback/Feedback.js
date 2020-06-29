@@ -1,9 +1,26 @@
 import React from 'react';
+import ComponentHeader from '../ComponentHeader';
+import './Feedback.scss';
 
-const Feedback = () => {
+const Feedback = ({ scoreResult }) => {
+	const comment = scoreResult[0];
+	// 점수 scoreResult[1] ~ [4]
+
 	return (
-		<div>
-			Feedback
+		<div className='feedback'>
+			<ComponentHeader headerTitle="Tutor's Feedback" /> 
+			<div className='content'>
+				<p className='comment'>
+					{scoreResult.length && (
+						comment.overall_comment
+					)}
+				</p>
+				<a href='/'>
+					<span className='detail'>
+						Detail >
+					</span>
+				</a>
+			</div>
 		</div>
 	);
 };

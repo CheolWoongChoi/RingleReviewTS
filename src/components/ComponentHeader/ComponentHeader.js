@@ -1,8 +1,9 @@
 import React from 'react';
+import './ComponentHeader.scss';
 
 const ComponentHeader = ({ headerTitle }) => {
 	return (
-		<div>
+		<div className='component-header'>
 			*
 			{headerTitle}
 			?

@@ -1,19 +1,18 @@
 import React, { useEffect } from 'react';
 import Feedback from '../components/Feedback/Feedback';
 import { getFeedback } from '../actions';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 const FeedbackContainer = () => {
 	const dispatch = useDispatch();
-
+	const scoreResult = useSelector(state => state.feedback.scoreResult, []);
+	
 	useEffect(() => {
-		console.log('Feedback mount');
 		dispatch(getFeedback());
-
 	}, []);
 
 	return (
-		<Feedback />
+		<Feedback scoreResult={scoreResult} />
 	);
 }
 

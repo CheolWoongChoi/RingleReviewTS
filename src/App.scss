@@ -15,7 +15,9 @@
 		}
 
 		.right {
-			width: 40%;
+			padding-left: 15px;
+			border-left: solid 2px #ddd;
+			width: calc(40% - 20px);
 		}
 	}
 }

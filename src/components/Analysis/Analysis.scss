@@ -1,0 +1,63 @@
+
+.analysis {
+	margin-top: 100px;
+
+	.sub-header {
+		.icon {
+
+		}
+
+		.text {
+			padding-left: 20px;
+			font-size: 12px;
+		}
+	}
+
+	.content {
+		.data-chart-wrap {
+			display: flex;
+		}
+
+		.data-indicator {
+			margin-top: -28px;
+
+			.you, .tutor, .avg {
+				position: relative;
+				display: inline-block;
+				font-size: 10px;
+
+				&::before {
+					content: '';
+					display: block;
+					width: 15px;
+					height: 5px;
+					position: absolute;
+					top: 5px;
+					left: -23px;
+				}
+			}
+
+			.you {
+				&::before {
+					background-color: rgb(122, 93, 232);
+				}
+			}
+
+			.tutor {
+				margin-left: 44px;
+
+				&::before {
+					background-color: rgb(155, 155, 155);
+				}
+			}
+
+			.avg {
+				margin-left: 39px;
+
+				&::before {
+					background-color: rgb(105, 200, 128);
+				}
+			}
+		}
+	}
+}

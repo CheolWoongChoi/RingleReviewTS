@@ -1,0 +1,30 @@
+
+// rechart css 덮어쓰기
+.recharts-wrapper {
+	margin-top: -20px;
+	display: inline-block;
+	width: 100% !important;
+
+	.recharts-surface {
+		width: 100% !important;
+	}
+}
+
+.data-chart {
+	margin-top: 20px;
+	text-align: center;
+
+	.header {
+		padding-left: 40px;
+		text-align: center;
+
+		.text {
+			font-size: 12px;
+			font-weight: bold;
+		}
+		
+		.icon {
+
+		}
+	}
+}

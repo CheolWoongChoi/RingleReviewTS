@@ -11,9 +11,9 @@ export const getScript = () => async dispatch => {
 	const response = await ringleReview.get('/script');
 
 	console.log('[getScript]');
-	console.log(response);
+	console.log(response.data);
 
-	dispatch({ type: GET_SCRIPT, payload: response });
+	dispatch({ type: GET_SCRIPT, payload: response.data });
 };
 
 // analysis
@@ -21,9 +21,9 @@ export const getAnalysis = () => async dispatch => {
 	const response = await ringleReview.get('/analysis');
 
 	console.log('[getAnalysis]');
-	console.log(response);
+	console.log(response.data);
 
-	dispatch({ type: GET_ANALYSIS, payload: response });
+	dispatch({ type: GET_ANALYSIS, payload: response.data });
 };
 
 // feedback
@@ -31,9 +31,9 @@ export const getFeedback = () => async dispatch => {
 	const response = await ringleReview.get('/feedback');
 
 	console.log('[getFeedback]');
-	console.log(response);
+	console.log(response.data);
 
-	dispatch({ type: GET_FEEDBACK, payload: response });
+	dispatch({ type: GET_FEEDBACK, payload: response.data });
 };
 
 // suggestions
@@ -41,7 +41,7 @@ export const getSuggestions = () => async dispatch => {
 	const response = await ringleReview.get('/suggestions');
 
 	console.log('[getSuggestions]');
-	console.log(response);
+	console.log(response.data);
 
-	dispatch({ type: GET_SUGGESTIONS, payload: response });
+	dispatch({ type: GET_SUGGESTIONS, payload: response.data });
 };

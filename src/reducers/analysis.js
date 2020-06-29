@@ -1,13 +1,17 @@
 // actions
+import { GET_ANALYSIS } from '../actionTypes';
 
 const initialState = {
-
+	perLesson: {}
 };
 
 const analysis = (state = initialState, action) => {
 	switch(action.type) {
-		case 'something': 
-			return state;
+		case GET_ANALYSIS:
+			return {
+				...state,
+				perLesson: action.payload.per_lesson
+			}
 		default:
 			return state;
 	}
