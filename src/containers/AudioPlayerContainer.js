@@ -1,15 +1,12 @@
 import React, { useEffect } from 'react';
 import AudioPlayer from '../components/AudioPlayer';
-import { getAudioPlayer } from '../actions';
 import { useSelector } from 'react-redux';
 
 const AudioPlayerContainer = () => {
-
-	useEffect(() => {
-	}, []);
+	const audioUrl = useSelector(state => state.script.audioUrl);
 
 	return (
-		<AudioPlayer />
+		<AudioPlayer audioUrl={audioUrl} />
 	);
 }
 

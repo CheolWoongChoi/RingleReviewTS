@@ -1,0 +1,53 @@
+.script-card {
+	margin: 13px 0;
+
+	.role1 {
+		display: flex;
+		align-items: center;
+
+		img {
+			border-radius: 50%;
+			width: 30px;
+		}
+
+		.content {
+			background-color: #fff;
+			display: inline-block;
+			margin-left: 10px;
+			padding: 10px;
+			box-shadow: 0 0 9px 0 rgba(122,93,232,.15);
+			max-width: 70%;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.time {
+			align-self: flex-end;
+			margin-left: 10px;
+			font-size: 12px;
+		}
+	}
+
+	.role0 {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		.time {
+			align-self: flex-end;
+			margin-right: 10px;
+			font-size: 12px;
+		}
+
+		.content {
+			display: inline-block;
+			padding: 10px;
+			background-color: #7a5de8;
+			box-shadow: 0 0 9px 0 rgba(122,93,232,.15);
+			max-width: 70%;
+			font-size: 14px;
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+}

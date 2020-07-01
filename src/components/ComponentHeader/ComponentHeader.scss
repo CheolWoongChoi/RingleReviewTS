@@ -1,11 +1,21 @@
 
 .component-header {
+	position: relative;
 	display: flex;
-	border-bottom: solid 2px #ddd;
 	padding-bottom: 10px;
 
 	font-size: 15px;
 	font-weight: bold;
+
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		display: block;
+		background-color: #ddd;
+		height: 2px;
+		width: 400px;
+	}
 
 	img {
 		margin-right: 3px;

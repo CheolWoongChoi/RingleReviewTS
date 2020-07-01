@@ -1,7 +1,10 @@
 .suggestions {
+	margin-left: 2%;
 	display: inline-block;
-	width: 50%;
-
+	width: 48%;
+	height: 80vh;
+	overflow-y: auto;
+	
 	.content {
 		text-align: center;
 	}

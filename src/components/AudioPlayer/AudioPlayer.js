@@ -1,9 +1,16 @@
 import React from 'react';
+import './AudioPlayer.scss';
 
-const AudioPlayer = () => {
+const AudioPlayer = ({ audioUrl }) => {
 	return (
-		<div>
-			오디오 플레이어
+		<div className='audio-player'>
+			<audio
+				controls
+        src={audioUrl}
+			>
+				Your browser does not support the
+				<code>audio</code> element.
+			</audio>
 		</div>
 	);
 }
