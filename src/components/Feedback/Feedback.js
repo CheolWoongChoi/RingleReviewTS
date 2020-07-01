@@ -8,7 +8,10 @@ const Feedback = ({ scoreResult }) => {
 
 	return (
 		<div className='feedback'>
-			<ComponentHeader headerTitle="Tutor's Feedback" /> 
+			<ComponentHeader 
+				headerTitle="Tutor's Feedback" 
+				imgUrl={'https://ringleimageassets.s3.ap-northeast-2.amazonaws.com/common/icon/ic-feedback.png'}
+			/> 
 			<div className='content'>
 				<p className='comment'>
 					{scoreResult.length && (

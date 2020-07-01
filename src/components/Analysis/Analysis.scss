@@ -3,12 +3,18 @@
 	margin-top: 100px;
 
 	.sub-header {
-		.icon {
+		margin-top: 10px;
+		padding-left: 20px;
+		display: flex;
+		align-items: center;
 
+		.icon {
+			img {
+				width: 23px;
+			}
 		}
 
 		.text {
-			padding-left: 20px;
 			font-size: 12px;
 		}
 	}
@@ -20,6 +26,7 @@
 
 		.data-indicator {
 			margin-top: -28px;
+			text-align: center;
 
 			.you, .tutor, .avg {
 				position: relative;

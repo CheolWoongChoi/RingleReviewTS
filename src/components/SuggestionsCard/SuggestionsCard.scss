@@ -1,0 +1,140 @@
+.suggestions-card {
+	box-shadow: 0 0 9px 0 rgba(122,93,232,.15);
+	border-radius: 5px;
+	margin: 15px auto;
+	padding: 12px 20px;
+	position: relative;
+	width: 300px;
+	text-align: left;
+
+	.like-btn {
+		position: absolute;
+		top: 2px;
+		right: 7px;
+
+		img {
+			width: 30px;
+			cursor: pointer;
+		}
+	}
+
+	.message {
+		padding-right: 85px;
+		font-size: 12px;
+	}
+
+	.error-request {
+		margin: 20px 0 0;
+		
+		.default-text {
+			font-size: 10px;
+			color: #ddd;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.error-send {
+			width: 270px;
+
+			textarea, button {
+				display: inline-block;
+				width: 100%;
+			}
+
+			textarea {
+				padding: 1px;
+			}
+
+			button {
+				margin-top: -7px;
+				border: none;
+				background-color: #7a5de8;
+				width: calc(100% + 3px);
+				font-size: 11px;
+				font-weight: bold;
+				height: 30px;
+				line-height: 30px;
+				color: #fff;
+			}
+		}
+
+	}
+
+	.frequency-word {
+		.text {
+			font-size: 11px;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.word-list {
+			.word-wrap {
+				border-bottom: solid 1px #ddd;
+				margin-top: 10px;
+				padding-bottom: 2px;
+				display: flex;
+				justify-content: space-between;
+				font-size: 10px;
+				color: #000;
+			}
+		}
+	}
+
+	.synonym-list {
+		.explain {
+			button {
+				border: none;
+				outline: none;
+				background-color: #7a5de8;
+				margin-top: 10px;
+				padding: 7px 10px;
+				color: #fff;
+				font-size: 12px;
+				font-weight: bold;
+				cursor: pointer;
+			}
+		}
+
+		.word-list {
+			margin-top: 7px;
+			
+			.word-wrap {
+				.voca {
+					display: flex;
+					justify-content: space-between;
+					padding: 7px;
+					border-bottom: solid 1px #ddd;
+					cursor: pointer;
+
+					.text {
+						font-size: 16px;
+						color: #aaa;
+					}
+
+					.arrow {
+						img {
+							width: 25px;
+						}
+					}
+				}
+			}
+
+			.synonyms-wrap {
+				margin-top: 7px;
+
+				.synonym {
+					border: none;
+					outline: none;
+					background-color: #7a5de8;
+					margin: 5px;
+					padding: 7px 10px;
+					color: #fff;
+					font-size: 12px;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+
+	// 기타
+}

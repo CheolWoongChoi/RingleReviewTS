@@ -7,7 +7,6 @@ const ScriptContainer = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		console.log('Script mount');
 		dispatch(getScript());
 
 	}, []);

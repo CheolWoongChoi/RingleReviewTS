@@ -8,7 +8,6 @@ const AnalysisContainer = () => {
 	const perLesson = useSelector(state => state.analysis.perLesson);
 
 	useEffect(() => {
-		console.log('analysis mount');
 		dispatch(getAnalysis()); 
 	}, []);
 

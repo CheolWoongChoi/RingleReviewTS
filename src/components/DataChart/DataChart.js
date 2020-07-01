@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, Tooltip } from 'recharts';
 import './DataChart.scss';
 
 const DataChart = ({ headerText, data }) => {
@@ -13,6 +13,7 @@ const DataChart = ({ headerText, data }) => {
 				<CartesianGrid strokeDasharray="3 3"/>
 				<XAxis dataKey="name"/>
 				<YAxis/>
+				<Tooltip />
 				<Bar dataKey="student" fill="#7A5DE8" />
 				<Bar dataKey="tutor" fill="#9B9B9B" />
 				<Bar dataKey="avg_student" fill="#69C880" />

@@ -5,16 +5,28 @@
 		}
 
 		.text {
-			width: 60%;
-			font-size: 24px;
+			width: 70%;
+			font-size: 21px;
 			font-weight: 600;
 			color: #2d2d2f;
 		}
 		
 		.date {
-			width: 30%;
 			margin-left: 1%;
-			font-size: 13px;
+			width: 29%;
+			text-align: right;
+
+			img {
+				display: inline-block;
+				width: 23px;
+				position: relative;
+				top: 6px;
+			}
+
+			.date-text {
+				margin-left: 5px;
+				font-size: 13px;
+			}
 		}
 	}
 

@@ -1,19 +1,23 @@
 import React, { useEffect } from 'react';
 import Suggestions from '../components/Suggestions/Suggestions';
 import { getSuggestions } from '../actions';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 const SuggestionsContainer = () => {
 	const dispatch = useDispatch();
+	const { frequencyWord, fillerWord, synonym } = useSelector(state => state.suggestions, []);
 
 	useEffect(() => {
-		console.log('suggestions mount');
 		dispatch(getSuggestions());
 
 	}, []);
 
 	return (
-		<Suggestions />
+		<Suggestions 
+			frequencyWord={frequencyWord}
+			fillerWord={fillerWord}
+			synonym={synonym}
+		/>
 	);
 }
 
