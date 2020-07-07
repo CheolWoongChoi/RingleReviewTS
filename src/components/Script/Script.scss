@@ -1,6 +1,9 @@
 .script {
 	display: inline-block;
-	width: 48%;
-	height: 80vh;
-	overflow-y: auto;
+	width: 49%;
+
+	.content {
+		height: 80vh;
+		overflow-y: auto;
+	}
 }

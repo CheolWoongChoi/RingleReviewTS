@@ -20,14 +20,14 @@ const ScriptCard = ({ dialog }) => {
 			{role === 1 && (
 				<div className='role1'>
 					<img src={image_url} alt='role-img' />
-					<span className='content'>{content}</span>
+					<span className='script-content'>{content}</span>
 					<span className='time'>{formatted_time}</span>
 				</div>
 			)}
 			{role === 0 && (
 				<div className='role0'>
 					<span className='time'>{formatted_time}</span>
-					<span className='content'>{content}</span>
+					<span className='script-content'>{content}</span>
 				</div>
 			)}
 		</div>
