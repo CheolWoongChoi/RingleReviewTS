@@ -1,35 +1,41 @@
 import { 
 	GET_SCRIPT, 
+	TOGGLE_AUTO_SCROLL,
 	GET_ANALYSIS, 
 	GET_FEEDBACK, 
-	GET_SUGGESTIONS 
+	GET_SUGGESTIONS, 
 } from '../actionTypes';
-import ringleReview from '../apis/ringleReview';
+import { thunk } from './thunk';
 
 // script
-export const getScript = () => async dispatch => {
-	const response = await ringleReview.get('/script');
+export const getScript = () => dispatch => thunk({
+	api: '/script',
+	actionType: GET_SCRIPT,
+	dispatch
+});
 
-	dispatch({ type: GET_SCRIPT, payload: response.data });
-};
+export const toggleAutoScroll = value => ({
+	type: TOGGLE_AUTO_SCROLL,
+	payload: value
+});
 
 // analysis
-export const getAnalysis = () => async dispatch => {
-	const response = await ringleReview.get('/analysis');
-
-	dispatch({ type: GET_ANALYSIS, payload: response.data });
-};
+export const getAnalysis = () => dispatch => thunk({
+	api: '/analysis',
+	actionType: GET_ANALYSIS,
+	dispatch
+});
 
 // feedback
-export const getFeedback = () => async dispatch => {
-	const response = await ringleReview.get('/feedback');
-
-	dispatch({ type: GET_FEEDBACK, payload: response.data });
-};
+export const getFeedback = () => dispatch => thunk({
+	api: '/feedback',
+	actionType: GET_FEEDBACK,
+	dispatch
+});
 
 // suggestions
-export const getSuggestions = () => async dispatch => {
-	const response = await ringleReview.get('/suggestions');
-
-	dispatch({ type: GET_SUGGESTIONS, payload: response.data });
-};
+export const getSuggestions = () => dispatch => thunk({
+	api: '/suggestions',
+	actionType: GET_SUGGESTIONS,
+	dispatch
+});

@@ -1,12 +1,14 @@
 import React from 'react';
 import './AudioPlayer.scss';
 
-const AudioPlayer = ({ audioUrl }) => {
+const AudioPlayer = ({ audioUrl, onTimeUpdate }) => {
+	
 	return (
 		<div className='audio-player'>
 			<audio
 				controls
-        src={audioUrl}
+				src={audioUrl}
+				onTimeUpdate={onTimeUpdate}
 			>
 				Your browser does not support the
 				<code>audio</code> element.

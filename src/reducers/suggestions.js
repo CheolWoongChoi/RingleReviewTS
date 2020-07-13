@@ -34,6 +34,7 @@ const suggestions = (state = initialState, action) => {
 			
 			return {
 				...state,
+				success: true,
 				frequencyWord: {
 					listTop50: list_top_50,
 					listAll: list_all,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Legend, Tooltip } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import './DataChart.scss';
 
 const DataChart = ({ headerText, data }) => {
@@ -7,7 +7,7 @@ const DataChart = ({ headerText, data }) => {
 		<div className='data-chart'>
 			<div className='header'>
 				<span className='text'>{headerText}</span>
-				<span className='icon'>?</span>
+				<span className='icon'></span>
 			</div>
 			<BarChart syncld='data-chart' width={400} height={275} data={data} barSize={30} barGap={20} margin={{top: 0, right: 0, left: 0, bottom: 0}}>
 				<CartesianGrid strokeDasharray="3 3"/>
