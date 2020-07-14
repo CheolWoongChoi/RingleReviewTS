@@ -17,7 +17,7 @@ const script = (state = initialState, action) => {
 		case GET_SCRIPT: {
 			const { timestamps, dialog_array, url } = action.payload;
 			const dialogById = _.keyBy(dialog_array, dialog => dialog.id);
-			const dialogByTime = _.keyBy(dialog_array, dialog => dialog.formatted_time_to_milliseconds);
+			const dialogByTime = _.keyBy(dialog_array, dialog => dialog.formatted_time_to_milliseconds + 1);
 
 			return {
 				...state,
